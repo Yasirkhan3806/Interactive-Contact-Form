@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    color: #043546;
+    font-size: 3.5svw;
+    line-height: 4.2svw;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.main-sec{
+    height: 64svw;
+    width: 98.8svw;
+    /* border: 2px  solid ; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.background-color{
+    position: absolute;
+  z-index: 1;
+  background-color: #B3EFB2;
+  height: 21svw;
+  width: 100%;
+  padding-top: 3svw;
+}
+.background-color > p{
+    text-align: center;
+    color: #001a2394;
+    font-size: 1.8svw;
+}
+.a-m-cont{
+    width: 97.5svw;
+    height: 65svw;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-cont{
+    height: 40svw;
+    width: 79svw;
+    background-color: #E8F1F2;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cont1{
+    height: 38svw;
+    width: 27svw;
+    background-color: #31493C;
+    margin: 0.5svw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 2svw;
+    padding-left: 2svw; */
+    overflow: hidden;
+}
+.cont1-data-cont{
+    margin-left: 2.5svw;
+    height: 20svw;
+}
+.cont1-style-cont{
+    height: 300px;
+    width: 300px;
+    background: #b3efb285;
+    border-radius: 50%;
+    position: relative;
+    top: 81px;
+    right: -131px;
+}
+.info-conts{
+    width: 27svw;
+  height: 8svw;
+}
+#info-cont1{
+    margin-top: 2svw;
+}
+#info-cont1 h3 {
+    letter-spacing: 0.5px;
+    font-size: 2svw;
+}
+#info-cont1 p{
+    font-size: 1svw;
+    margin-top: 0.5svw;
+    color: rgba(255, 255, 255, 0.692);
+    line-height: 1.7svw;
+}
+.contact-info-cont{
+    display: flex;
+    gap: 0.4svw;
+}
+.d-cont > a{
+    display: block;
+  margin-bottom: 0.5svw;
+}
+.icon-cont{
+    width: 3svw;
+    height: 3svw;
+}
+.icon-cont1{
+    width: 3svw;
+    height: 3svw;
+    display: flex;
+    align-items: center;
+}
+.icon-cont > img{
+height: 24px;
+width: 24px;
+}
+#info-cont3 > .d-cont > a{
+    margin-top: 0.3svw;
+}
