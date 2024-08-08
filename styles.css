@@ -52,6 +52,10 @@ a{
     display: flex;
     border-radius: 10px;
     overflow: hidden;
+    gap: 5.5svw;
+background: #e0e0e0;
+box-shadow:  40px 40px 60px #0000005d,
+             -40px -40px 60px #f0f0f054;
 }
 .cont1{
     height: 38svw;
@@ -121,4 +125,222 @@ width: 24px;
 }
 #info-cont3 > .d-cont > a{
     margin-top: 0.3svw;
+}
+.main-data-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 42svw;
+    gap: 3svw;
+}
+input{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+    width: 30svw;
+    height: 3svw;
+    color: black;
+    /* margin-top: 2svw; */
+    font-family: sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.781);
+}
+.third-input{
+    display: block;
+    width: 39svw;
+    position: relative;
+}
+.first-two-i-cont{
+    width: 39svw;
+    display: flex;
+    gap: 2svw;
+}
+.first-Two-inputs{
+display: inline-block;
+position: relative;
+}
+textarea{
+    height: 10svw;
+  width: 39svw;
+  background: transparent;
+  border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+  border-bottom: 2px solid grey;
+color:black;
+outline: none;
+transition: 0.5s;
+}
+textarea:focus{
+    border-bottom: 2px solid rgb(18, 168, 18) ;
+}
+.placeholder{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.39);
+    top: 268px;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: 0.3s ;
+    pointer-events: none;
+  
+}
+input:focus{
+    border-bottom-color: rgb(18, 168, 18);
+}
+.first-Two-inputs:focus + .placeholder,
+.first-Two-inputs:not(:placeholder-shown) + .placeholder{
+    top: 245px;
+    font-size: 12px;
+    color: rgb(18, 168, 18);
+
+}
+.email-placeholder{
+    right: 393px;
+}
+.first-Two-inputs:focus + .email-placeholder,
+.first-Two-inputs:not(:placeholder-shown) + .email-placeholder{
+    right: 410px;
+}
+.subject-placeholder{
+    top: 25.8svw;
+    left: 42.8svw;
+}
+.third-input:focus + .subject-placeholder,
+ .third-input:not(:placeholder-shown) + .subject-placeholder{
+    top: 24svw;
+    color: rgb(18, 168, 18);;
+    font-size: 14px;
+}
+.btn-cont{
+    width: 38svw;
+}
+
+button{
+    padding: 0.9svw 1.5svw;
+    background-color: #31493C;
+    border-radius: 10px;
+    width: 15svw;
+    font-size: large;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #2a6d49;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .main-sec{
+        height: 164svw;
+    }
+    .a-m-cont{
+        height: 164svw;
+    }
+    .main-cont{
+        flex-direction: column;
+        height: 100svw;
+        gap: 9.5svw;
+    }
+    
+.cont1 {
+  height: 38svw;
+  width: 80svw;
+}
+.cont1-data-cont {
+    margin-left: 2.5svw;
+    height: 43svw;
+    width: 71svw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5svw;
+
+}
+
+.info-conts {
+    width: 68svw;
+    height: 8svw;
+}
+    .contact-info-cont {
+        display: flex;
+        gap: 6.4svw;
+}
+#info-cont1 {
+margin-top: 1svw;
+margin-bottom: 4svw;
+}
+
+#info-cont1 h3 {
+    letter-spacing: 0.5px;
+    font-size: 4svw;
+    text-align: center;
+}
+#info-cont1 p {
+    font-size: 1.8svw;
+    text-align: center;
+}
+.d-cont > a {
+    display: block;
+    margin-bottom: 0.5svw;
+    font-size: 2.5svw;
+}
+.icon-cont > img {
+    height: 16px;
+    width: 16px;
+}
+.first-two-i-cont {
+    width: 62svw;
+    display: flex;
+    gap: 3svw;
+}
+input{
+    margin-top: 2svw;
+}
+.third-input{
+    width: 62svw;
+}
+textarea {
+    height: 12svw;
+    width: 62svw;
+    font-size: 10px;
+}
+button {
+    padding: 2.9svw 1.9svw;
+    background-color: #31493C;
+    border-radius: 10px;
+    width: 28svw;
+    font-size: 10px;
+    transition: 0.5s;
+}
+.btn-cont{
+    width: 51svw;
+}
+.placeholder {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.39);
+    top: 305px;
+    font-size: 11px;
+    font-family: sans-serif;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  .first-Two-inputs:focus + .placeholder,
+.first-Two-inputs:not(:placeholder-shown) + .placeholder{
+    top: 290px;
+    font-size: 9px;
+    color: rgb(18, 168, 18);
+}
+.email-placeholder {
+    right: 126px;
+  }
+  .first-Two-inputs:focus + .email-placeholder,
+.first-Two-inputs:not(:placeholder-shown) + .email-placeholder{
+    right: 130px;
+}
+.subject-placeholder {
+    top: 88.8svw;
+    left: 17.8svw;
+}
 }
