@@ -11,66 +11,91 @@
         <div class="background-color">
             <h1>Get In Touch</h1>
             <p>Feel free to reach out to me. I'd love to hear your thoughts, ideas, or just say hi.</p>
-
         </div>
         <div class="a-m-cont">
-        <div class="main-cont">
-            <div class="cont1">
-                <div class="cont1-data-cont">
-                    <div id="info-cont1" class="info-conts">
-                        <h3>Contact Information</h3>
-                        <p>Let's connect and turn ideas into reality! Whether it's code, coffee, or collaboration.</p>
+            <div class="main-cont">
+                <div class="cont1">
+                    <div class="cont1-data-cont">
+                        <div id="info-cont1" class="info-conts">
+                            <h3>Contact Information</h3>
+                            <p>Let's connect and turn ideas into reality! Whether it's code, coffee, or collaboration.</p>
+                        </div>
+                        <div id="info-cont2" class="info-conts contact-info-cont">
+                            <div class="icon-cont icon-cont1">
+                                <img src="Images/icons8-phone-50.png" alt="Phone-Icon">
+                            </div>
+                            <div class="d-cont">
+                                <a href="tel:+1234567890"><b>+1 (234) 567-890</b></a>
+                                <a href="tel:+1234567890"><b>+1 (234) 567-890</b></a>
+                            </div>
+                        </div>
+                        <div id="info-cont3" class="info-conts contact-info-cont">
+                            <div class="icon-cont">
+                                <img src="Images/icons8-email-50(1).png" alt="Email-Icon">
+                            </div>
+                            <div class="d-cont">
+                                <a href="mailto:random@gmail.com"><b>random@gmail.com</b></a>
+                            </div>
+                        </div>
+                        <div id="info-cont4" class="info-conts contact-info-cont">
+                            <div class="icon-cont">
+                                <img src="Images/icons8-location-50.png" alt="Location-Icon">
+                            </div>
+                            <div class="d-cont">
+                                <a>Peshawar, Kpk</a>
+                            </div>
+                        </div>
                     </div>
-                    <div id="info-cont2" class="info-conts contact-info-cont">
-                        <div class="icon-cont icon-cont1">
-                            <img src="Images\icons8-phone-50.png" alt="Phone-Icon">
-                        </div>
-                        <div class="d-cont">
-                            <a href="tel:+1234567890"><b>+1 (234) 567-890</b></a>
-                            <a href="tel:+1234567890"><b>+1 (234) 567-890</b></a>
-                        </div>
-                    </div>
-                    <div id="info-cont3" class="info-conts contact-info-cont">
-                        <div class="icon-cont">
-                            <img src="Images\icons8-email-50(1).png" alt="Phone-Icon">
-                        </div>
-                        <div class="d-cont">
-                           <a href="">Random<b>@gmail.com</b></a>
-                        </div>
-                    </div>
-                    <div id="info-cont3" class="info-conts contact-info-cont">
-                        <div class="icon-cont">
-                            <img src="Images\icons8-location-50.png" alt="Phone-Icon">
-                        </div>
-                        <div class="d-cont">
-                            <a>Peshawar, Kpk</a>
-                        </div>
-                    </div>
+                    <div class="cont1-style-cont"></div>
                 </div>
-                <div class="cont1-style-cont"></div>
-            </div>
-            <div class="main-data-cont">
-                <div class="first-two-i-cont">
-                    
-                <input class="first-Two-inputs" type="text" placeholder="">
-                <label class="placeholder" for="">Your Name</label>
-                <input class="first-Two-inputs"  type="email" placeholder="">
-                <label class="placeholder email-placeholder" for="">Your Email</label>
-            </div>
-                <input class="third-input" type="text" placeholder=""> 
-                <label class="placeholder subject-placeholder" for="">Subject</label>
-                <textarea placeholder="Your Message" name="" id=""></textarea>
-                <div class="btn-cont">
-                    <button id="submission-btn" onclick="popupDisplay()">Send A Message</button>
+                <div class="main-data-cont">
+                    <form action="#" method="post" onsubmit="popupDisplay()">
+                        <div class="first-two-i-cont">
+                            <input class="first-Two-inputs" id="name" type="text" name="name" placeholder="" required>
+                            <label class="placeholder" for="name">Your Name</label>
+                            <input class="first-Two-inputs" id="email" type="email" name="email" placeholder="" required>
+                            <label class="placeholder email-placeholder" for="email">Your Email</label>
+                        </div>
+                        <input class="third-input" type="text" id="subject" name="subject" placeholder="" required> 
+                        <label class="placeholder subject-placeholder" for="subject">Subject</label>
+                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                        <div class="btn-cont">
+                            <input type="submit" value="Send A Message" id="submission-btn" onclick="validateForm()">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-<script src="script.js">
-    const popupDisplay = ()=>{
-  alert("We recieved your message, Thank you for your time!")
+    <script>
+function validateForm() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    // Basic email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // Check if all required fields are filled
+    if (!name || !email || !subject || !message) {
+        alert("Please fill in all required fields.");
+    }
+
+    // Check if the email is valid
+    else if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+
+    }
+    
+    // If all validations pass
+    else{
+    alert("We received your message, thank you for your time!");
 }
-</script>
+}
+
+
+
+    </script>
 </body>
 </html>
