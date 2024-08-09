@@ -320,7 +320,7 @@ button {
 .placeholder {
     position: absolute;
     color: rgba(0, 0, 0, 0.39);
-    top: 305px;
+    top:81svw;
     font-size: 11px;
     font-family: sans-serif;
     transition: 0.3s;
@@ -328,19 +328,74 @@ button {
   }
   .first-Two-inputs:focus + .placeholder,
 .first-Two-inputs:not(:placeholder-shown) + .placeholder{
-    top: 290px;
+    top:78svw;
     font-size: 9px;
     color: rgb(18, 168, 18);
 }
 .email-placeholder {
-    right: 126px;
+    right: 34svw;
   }
   .first-Two-inputs:focus + .email-placeholder,
 .first-Two-inputs:not(:placeholder-shown) + .email-placeholder{
-    right: 130px;
+    right: 35svw;
 }
 .subject-placeholder {
     top: 88.8svw;
     left: 17.8svw;
+}
+.third-input:focus + .subject-placeholder,
+ .third-input:not(:placeholder-shown) + .subject-placeholder{
+    top: 86svw;
+    color: rgb(18, 168, 18);;
+    font-size: 9px;
+}
+.background-color {
+    height: 67svw;
+    padding-top: 13svw;
+}
+.background-color > p {
+    text-align: center;
+    color: #001a2394;
+    font-size: 3svw;
+    line-height: 4.5svw;
+}
+h1 {
+    font-size: 6.5svw;
+    line-height: 7.2svw;
+}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+    input{
+        width: 18svw;
+    }
+    .placeholder{
+        top: 17svw;
+    }
+    .first-Two-inputs:focus + .placeholder,
+    .first-Two-inputs:not(:placeholder-shown) + .placeholder{
+        top:15svw;
+        font-size: 9px;
+        color: rgb(18, 168, 18);
+    }
+    .email-placeholder{
+        right: 25svw;
+    }
+    .first-Two-inputs:focus + .email-placeholder,
+    .first-Two-inputs:not(:placeholder-shown) + .email-placeholder{
+        right: 29.5svw;
+    }
+    .subject-placeholder {
+        top: 22.8svw;
+    }
+    .third-input:focus + .subject-placeholder,
+ .third-input:not(:placeholder-shown) + .subject-placeholder{
+    top: 21svw;
+    color: rgb(18, 168, 18);;
+    font-size: 9px;
+}
+button:hover{
+    background-color: #2a6d49;
+    cursor: pointer;
 }
 }
