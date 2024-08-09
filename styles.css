@@ -232,6 +232,7 @@ button:hover{
     cursor: pointer;
 }
 
+
 @media only screen and (max-width: 600px){
     .main-sec{
         height: 164svw;

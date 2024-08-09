@@ -61,12 +61,16 @@
                 <label class="placeholder subject-placeholder" for="">Subject</label>
                 <textarea placeholder="Your Message" name="" id=""></textarea>
                 <div class="btn-cont">
-                    <button>Send A Message</button>
+                    <button id="submission-btn" onclick="popupDisplay()">Send A Message</button>
                 </div>
             </div>
         </div>
     </div>
     </section>
-<script src="script.js"></script>
+<script src="script.js">
+    const popupDisplay = ()=>{
+  alert("We recieved your message, Thank you for your time!")
+}
+</script>
 </body>
 </html>
